@@ -5,7 +5,11 @@ export default function Card(props) {
   console.log(image);
   return (
     <div className="card">
-      <img src="" alt="card-image" className="card--image" />
+      <img
+        src={require("../Src/images/wedding-photography.png")}
+        alt="card-image"
+        className="card--image"
+      />
       <div className="card--stats">
         <img
           src={require("../Src/images/Star.png")}
