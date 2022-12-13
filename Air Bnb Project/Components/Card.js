@@ -1,23 +1,25 @@
-import Athelete from "../images/athelete.png";
-import Star from "../images/Star.png";
 import "../Src/index.css";
 
-export default function Card() {
+export default function Card(props) {
+  const image = `"../Src/images/${props.coverImg}"`;
+  console.log(image);
   return (
-    <div className="cards--section">
-      <div className="card">
-        <img src={Athelete} alt="card-image" className="card--image" />
-        <div className="card--stats">
-          <img src={Star} alt="" style={{ height: "14px" }} />
-          <span>5.0</span>
-          <span className="gray">(6)</span>
-          <span className="gray">• USA</span>
-        </div>
-        <p className="card--text">Life Lessons with Katie Zaferes</p>
-        <p>
-          <span className="bold">From $136</span> / person
-        </p>
+    <div className="card">
+      <img src={require(image)} alt="card-image" className="card--image" />
+      <div className="card--stats">
+        <img
+          src={require("../Src/images/Star.png")}
+          alt=""
+          style={{ height: "14px" }}
+        />
+        <span>{props.rating}</span>
+        <span className="gray">({props.reviewCount})</span>
+        <span className="gray">• {props.location}</span>
       </div>
+      <p className="card--text">{props.title}</p>
+      <p>
+        <span className="bold">From ${props.price}</span> / person
+      </p>
     </div>
   );
 }

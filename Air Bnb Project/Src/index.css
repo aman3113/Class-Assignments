@@ -41,11 +41,17 @@ body {
 
 .cards--section {
   padding: 10px 40px;
+  display: flex;
+  gap: 20px;
 }
 
 .card {
   width: 264px;
   overflow: hidden;
+}
+
+.card--image {
+  width: 100%;
 }
 
 .card--stats {

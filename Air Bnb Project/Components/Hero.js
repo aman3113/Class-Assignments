@@ -1,4 +1,4 @@
-import HeroImage from "../images/hero.png";
+import HeroImage from "../Src/images/hero.png";
 import "../Src/index.css";
 
 export default function Hero() {
