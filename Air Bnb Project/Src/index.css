@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav {
+  padding: 30px 40px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.nav--logo {
+  height: 70px;
+}
+
+.hero--section {
+  padding: 10px 40px;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero--image {
+  width: 80%;
+  align-self: center;
+}
+
+.hero--heading {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero--text {
+  max-width: 325px;
+}
