@@ -38,3 +38,32 @@ body {
 .hero--text {
   max-width: 325px;
 }
+
+.cards--section {
+  padding: 10px 40px;
+}
+
+.card {
+  width: 264px;
+  overflow: hidden;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 5px 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: #918e9b;
+}
+
+.card--text {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
