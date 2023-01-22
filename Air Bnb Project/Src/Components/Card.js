@@ -1,4 +1,4 @@
-import "../Src/index.css";
+import "../index.css";
 
 export default function Card(props) {
   const image = `"../Src/images/${props.coverImg}"`;

@@ -1,8 +1,8 @@
-import Navbar from "../Components/Navbar.js";
-import Hero from "../Components/Hero.js";
-import Card from "../Components/Card.js";
+import Navbar from "./Components/Navbar.js";
+import Hero from "./Components/Hero.js";
+import Card from "./Components/Card.js";
 import data from "./data.js";
-import "../Src/index.css";
+import "../index.css";
 
 export default function App() {
   const card = data.map((item) => (
